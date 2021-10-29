@@ -1,0 +1,8 @@
+{
+  "name": "admin_panels",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Fasunle/react-admin-panels.git",
+  "author": "Kehinde Hussein, Fasunle <kfasunle@gmail.com>",
+  "license": "MIT"
+}
