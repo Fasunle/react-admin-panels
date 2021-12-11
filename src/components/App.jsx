@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 // local imports
 import Header from './Header';
 import theme from '../theme';
-import SidebarNavigation from "./Sidebar";
+import Sidebar from "./Sidebar";
 import Content from "./Contents";
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
             <Router>
                 <Header />
                 <Stack direction="row" sx={{marginTop: '5rem'}}>
-                    <SidebarNavigation />
+                    <Sidebar />
                     <Content/>
                 </Stack>
             </Router>
