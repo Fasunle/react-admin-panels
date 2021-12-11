@@ -15,12 +15,13 @@ import {
   Notifications as NotificationsIcon 
 } from '@mui/icons-material';
 // local imports
-import { AdminProfile } from './AdminProfile';
+import Admin  from './Admin';
 import { MobileMenu } from './MobileMenu';
 
 export default ()=> {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [mobileAchorEl, setMobileAnchorEl] = useState(null);
+  const [mobileAchorEl, setMobileAnchorEl] = useState(null);  //! This handles Menu toggle
+  
   const open  = Boolean(anchorEl);
   const openMobileMenu  = Boolean(mobileAchorEl);
 
@@ -74,7 +75,7 @@ export default ()=> {
         </Toolbar>
       </AppBar>
       {/* Admin Profile Menu is displayed when Avatar is clicked */}
-      <AdminProfile open={open} anchorEl={anchorEl} onClick={handleClose} />
+      <Admin open={open} anchorEl={anchorEl} onClick={handleClose} />
       {/* Mobile Menu is displayed on small screen when MoreIcon is clicked */}
       <MobileMenu open={openMobileMenu} anchorEl={mobileAchorEl} onClick={handleMobileClose} />
     </Box>
